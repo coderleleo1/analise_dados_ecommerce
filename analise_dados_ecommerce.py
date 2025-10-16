@@ -67,6 +67,7 @@ x = dados['Gênero'].value_counts().index # Categorias
 y = dados['Gênero'].value_counts().values # Quantidades
 plt.pie(y, labels = x, autopct = '%.1f%%', startangle = 90, colors = ['#4b3f7f', '#367082', '#72debf'], textprops = {'color': 'white'})
 plt.title('GÊNERO DOS PRODUTOS')
+plt.legend(title = 'Gênero Produto', loc = 'upper right')
 plt.show()
 
 plt.savefig('Graficos_Gerados/Pizza_Tipo_Genero_Produtos.png')
